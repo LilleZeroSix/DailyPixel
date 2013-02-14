@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9213F8416CD534D00502412 /* ProfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8316CD534D00502412 /* ProfilViewController.m */; };
+		A9213F8716CD536500502412 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8616CD536500502412 /* WeekViewController.m */; };
+		A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8916CD53A000502412 /* MonthViewController.m */; };
 		D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A516CD373C00C85FE4 /* UIKit.framework */; };
 		D22A41A816CD373C00C85FE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A716CD373C00C85FE4 /* Foundation.framework */; };
 		D22A41AA16CD373C00C85FE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A916CD373C00C85FE4 /* CoreGraphics.framework */; };
@@ -26,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9213F8216CD534D00502412 /* ProfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilViewController.h; sourceTree = "<group>"; };
+		A9213F8316CD534D00502412 /* ProfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilViewController.m; sourceTree = "<group>"; };
+		A9213F8516CD536500502412 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
+		A9213F8616CD536500502412 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
+		A9213F8816CD53A000502412 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
+		A9213F8916CD53A000502412 /* MonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthViewController.m; sourceTree = "<group>"; };
 		D22A41A216CD373C00C85FE4 /* DagensPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DagensPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A41A516CD373C00C85FE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D22A41A716CD373C00C85FE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +115,12 @@
 				D22A41CA16CD373C00C85FE4 /* second.png */,
 				D22A41CC16CD373C00C85FE4 /* second@2x.png */,
 				D22A41AC16CD373C00C85FE4 /* Supporting Files */,
+				A9213F8216CD534D00502412 /* ProfilViewController.h */,
+				A9213F8316CD534D00502412 /* ProfilViewController.m */,
+				A9213F8516CD536500502412 /* WeekViewController.h */,
+				A9213F8616CD536500502412 /* WeekViewController.m */,
+				A9213F8816CD53A000502412 /* MonthViewController.h */,
+				A9213F8916CD53A000502412 /* MonthViewController.m */,
 			);
 			path = DagensPixel;
 			sourceTree = "<group>";
@@ -198,6 +213,9 @@
 				D22A41B616CD373C00C85FE4 /* AppDelegate.m in Sources */,
 				D22A41C216CD373C00C85FE4 /* FirstViewController.m in Sources */,
 				D22A41C916CD373C00C85FE4 /* SecondViewController.m in Sources */,
+				A9213F8416CD534D00502412 /* ProfilViewController.m in Sources */,
+				A9213F8716CD536500502412 /* WeekViewController.m in Sources */,
+				A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +338,7 @@
 				D22A41D216CD373C00C85FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
