@@ -29,7 +29,6 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Dagens bild" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,6 +55,7 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dagens bild" image="first" id="7"/>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" id="Nga-Ek-uvZ">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="vbr-Z3-dfR"/>
                     </navigationItem>
@@ -68,6 +68,17 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1071" y="-208"/>
+=======
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="O9O-UN-TMZ">
+                    <connections>
+                        <segue destination="la5-Qc-ifG" kind="push" id="lLm-bf-1OR"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="669" y="-254"/>
+>>>>>>> trassel
         </scene>
         <!--Week View Controller-->
         <scene sceneID="kQ4-o0-U5C">
@@ -101,7 +112,14 @@
                             <constraint firstItem="G3x-40-b1d" firstAttribute="top" secondItem="Gsz-7e-UQx" secondAttribute="top" constant="204" id="xRW-s2-8e0"/>
                         </constraints>
                     </view>
+<<<<<<< HEAD
                     <navigationItem key="navigationItem" id="6Aw-Gp-hBR"/>
+=======
+                    <navigationItem key="navigationItem" id="hDC-tG-YsT"/>
+                    <connections>
+                        <segue destination="bU1-z1-uNZ" kind="custom" id="dVT-2n-0eV"/>
+                    </connections>
+>>>>>>> trassel
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lki-IX-grM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

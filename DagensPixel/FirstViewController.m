@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+//#import "IIViewDeckController.h"
+
 
 @interface FirstViewController ()
 
@@ -17,7 +19,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [self.view setBackgroundColor:[UIColor PixelColor]];
+    
+  //  UIViewController* leftController = [[UIViewController alloc] init];
+    //UIViewController* rightController = [[UIViewController alloc] init];
+    
+    //IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController leftViewController:leftController
+        //rightViewController:rightController];
 }
 
 - (void)didReceiveMemoryWarning
