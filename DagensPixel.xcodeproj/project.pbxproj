@@ -24,7 +24,7 @@
 		D22A41BA16CD373C00C85FE4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41B916CD373C00C85FE4 /* Default@2x.png */; };
 		D22A41BC16CD373C00C85FE4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41BB16CD373C00C85FE4 /* Default-568h@2x.png */; };
 		D22A41BF16CD373C00C85FE4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22A41BD16CD373C00C85FE4 /* MainStoryboard.storyboard */; };
-		D22A41C216CD373C00C85FE4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A41C116CD373C00C85FE4 /* FirstViewController.m */; };
+		D22A41C216CD373C00C85FE4 /* DayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A41C116CD373C00C85FE4 /* DayViewController.m */; };
 		D22A41C416CD373C00C85FE4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41C316CD373C00C85FE4 /* first.png */; };
 		D22A41C616CD373C00C85FE4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41C516CD373C00C85FE4 /* first@2x.png */; };
 		D22A41CB16CD373C00C85FE4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41CA16CD373C00C85FE4 /* second.png */; };
@@ -61,8 +61,8 @@
 		D22A41B916CD373C00C85FE4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D22A41BB16CD373C00C85FE4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D22A41BE16CD373C00C85FE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D22A41C016CD373C00C85FE4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		D22A41C116CD373C00C85FE4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D22A41C016CD373C00C85FE4 /* DayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayViewController.h; sourceTree = "<group>"; };
+		D22A41C116CD373C00C85FE4 /* DayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayViewController.m; sourceTree = "<group>"; };
 		D22A41C316CD373C00C85FE4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		D22A41C516CD373C00C85FE4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		D22A41CA16CD373C00C85FE4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 		A917F06216DB6AE10072A3BA /* DayWeekMonth */ = {
 			isa = PBXGroup;
 			children = (
-				D22A41C016CD373C00C85FE4 /* FirstViewController.h */,
-				D22A41C116CD373C00C85FE4 /* FirstViewController.m */,
+				D22A41C016CD373C00C85FE4 /* DayViewController.h */,
+				D22A41C116CD373C00C85FE4 /* DayViewController.m */,
 				A9213F8516CD536500502412 /* WeekViewController.h */,
 				A9213F8616CD536500502412 /* WeekViewController.m */,
 				A9213F8816CD53A000502412 /* MonthViewController.h */,
@@ -259,7 +259,7 @@
 			files = (
 				D22A41B216CD373C00C85FE4 /* main.m in Sources */,
 				D22A41B616CD373C00C85FE4 /* AppDelegate.m in Sources */,
-				D22A41C216CD373C00C85FE4 /* FirstViewController.m in Sources */,
+				D22A41C216CD373C00C85FE4 /* DayViewController.m in Sources */,
 				A9213F8716CD536500502412 /* WeekViewController.m in Sources */,
 				A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */,
 				D22A421316D60F5F00C85FE4 /* Server.m in Sources */,

@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 LightStyle. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "DayViewController.h"
 
-@interface FirstViewController ()
+@interface DayViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation DayViewController
 
 - (void)viewDidLoad
 {

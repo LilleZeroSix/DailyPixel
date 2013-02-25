@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "IIViewDeckController.h"
 
-@interface FirstViewController : UIViewController
+@interface DayViewController : UIViewController
 
 @property (nonatomic, strong) UIViewController *centerController;
 
