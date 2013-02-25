@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "IIViewDeckController.h"
 
 @interface FirstViewController : UIViewController
+
+@property (nonatomic, strong) UIViewController *centerController;
 
 @end

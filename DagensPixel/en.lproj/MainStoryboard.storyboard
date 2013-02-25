@@ -20,12 +20,12 @@
             </objects>
             <point key="canvasLocation" x="653" y="-208"/>
         </scene>
-        <!--First View Controller - First-->
+        <!--First View Controller - Day-->
         <scene sceneID="11">
             <objects>
-                <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController title="Day" id="2" customClass="FirstViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Dagens bild" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
@@ -52,6 +52,7 @@
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="O9O-UN-TMZ" appends="YES" id="7Hb-yd-uRS"/>
+                            <outletCollection property="gestureRecognizers" destination="kFT-jg-2oS" appends="YES" id="hwr-Qb-rgW"/>
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dagens bild" image="first" id="7"/>
@@ -63,6 +64,11 @@
                 <swipeGestureRecognizer direction="left" id="O9O-UN-TMZ">
                     <connections>
                         <segue destination="la5-Qc-ifG" kind="push" id="4Ca-Ir-FCi"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="kFT-jg-2oS">
+                    <connections>
+                        <segue destination="bU1-z1-uNZ" kind="push" id="T2H-kw-D4I"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -93,18 +99,27 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="G3x-40-b1d" firstAttribute="centerX" secondItem="vU7-WS-JbP" secondAttribute="centerX" type="default" id="HoX-bP-cOQ"/>
                             <constraint firstItem="vU7-WS-JbP" firstAttribute="top" secondItem="Gsz-7e-UQx" secondAttribute="top" constant="127" id="NdX-L0-LLn"/>
                             <constraint firstItem="vU7-WS-JbP" firstAttribute="centerX" secondItem="Gsz-7e-UQx" secondAttribute="centerX" type="default" id="XFR-5b-VVH"/>
                             <constraint firstItem="G3x-40-b1d" firstAttribute="top" secondItem="Gsz-7e-UQx" secondAttribute="top" constant="204" id="xRW-s2-8e0"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="43E-m0-jrl" appends="YES" id="ARQ-Yh-dQH"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="6Aw-Gp-hBR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lki-IX-grM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="43E-m0-jrl">
+                    <connections>
+                        <segue destination="2" kind="push" id="TM2-eX-Jyz"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1479" y="-208"/>
+            <point key="canvasLocation" x="1565" y="216"/>
         </scene>
         <!--Month View Controller-->
         <scene sceneID="16g-y8-Udv">
@@ -137,6 +152,7 @@
                             <constraint firstItem="RFC-JA-ahr" firstAttribute="top" secondItem="MIG-XI-WAX" secondAttribute="top" constant="137" id="kbP-AE-cyW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="39C-Bb-WR0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEp-ww-ELg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -272,4 +288,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="TM2-eX-Jyz"/>
+    </inferredMetricsTieBreakers>
 </document>
