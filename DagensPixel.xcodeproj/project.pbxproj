@@ -10,6 +10,7 @@
 		A917F06A16DB6B580072A3BA /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F06516DB6B580072A3BA /* IISideController.m */; };
 		A917F06B16DB6B580072A3BA /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F06716DB6B580072A3BA /* IIViewDeckController.m */; };
 		A917F06C16DB6B580072A3BA /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F06916DB6B580072A3BA /* IIWrapController.m */; };
+		A917F06E16DB6C9A0072A3BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A917F06D16DB6C9A0072A3BA /* QuartzCore.framework */; };
 		A9213F8716CD536500502412 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8616CD536500502412 /* WeekViewController.m */; };
 		A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8916CD53A000502412 /* MonthViewController.m */; };
 		D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A516CD373C00C85FE4 /* UIKit.framework */; };
@@ -40,6 +41,7 @@
 		A917F06716DB6B580072A3BA /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
 		A917F06816DB6B580072A3BA /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
 		A917F06916DB6B580072A3BA /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		A917F06D16DB6C9A0072A3BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A9213F8516CD536500502412 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		A9213F8616CD536500502412 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		A9213F8816CD53A000502412 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A917F06E16DB6C9A0072A3BA /* QuartzCore.framework in Frameworks */,
 				D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */,
 				D22A41A816CD373C00C85FE4 /* Foundation.framework in Frameworks */,
 				D22A41AA16CD373C00C85FE4 /* CoreGraphics.framework in Frameworks */,
@@ -133,6 +136,7 @@
 		D22A41A416CD373C00C85FE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A917F06D16DB6C9A0072A3BA /* QuartzCore.framework */,
 				D22A41A516CD373C00C85FE4 /* UIKit.framework */,
 				D22A41A716CD373C00C85FE4 /* Foundation.framework */,
 				D22A41A916CD373C00C85FE4 /* CoreGraphics.framework */,
