@@ -10,7 +10,4 @@
 
 @interface FirstViewController : UIViewController
 
-@property (nonatomic, strong) UIViewController *centerController;
-
-
 @end

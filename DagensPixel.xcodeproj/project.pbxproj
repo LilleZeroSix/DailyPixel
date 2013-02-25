@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		A9213F8716CD536500502412 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8616CD536500502412 /* WeekViewController.m */; };
 		A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8916CD53A000502412 /* MonthViewController.m */; };
-		A968675816D6597200DDD904 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = A968671D16D5F0A700DDD904 /* IIViewDeckController.m */; };
-		A968675B16D6605900DDD904 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A968675A16D6605900DDD904 /* IIWrapController.m */; };
-		A9B6563B16DB609A00961FA8 /* UIColor+DayColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6563A16DB609A00961FA8 /* UIColor+DayColor.m */; };
-		A9CF30F216D6625E008DE42C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CF30F116D6625E008DE42C /* QuartzCore.framework */; };
 		D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A516CD373C00C85FE4 /* UIKit.framework */; };
 		D22A41A816CD373C00C85FE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A716CD373C00C85FE4 /* Foundation.framework */; };
 		D22A41AA16CD373C00C85FE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A916CD373C00C85FE4 /* CoreGraphics.framework */; };
@@ -39,13 +35,6 @@
 		A9213F8616CD536500502412 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		A9213F8816CD53A000502412 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
 		A9213F8916CD53A000502412 /* MonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthViewController.m; sourceTree = "<group>"; };
-		A968671C16D5F0A700DDD904 /* IIViewDeckController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
-		A968671D16D5F0A700DDD904 /* IIViewDeckController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
-		A968675916D6605900DDD904 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
-		A968675A16D6605900DDD904 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
-		A9B6563916DB609A00961FA8 /* UIColor+DayColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+DayColor.h"; path = "../UIColor+DayColor.h"; sourceTree = "<group>"; };
-		A9B6563A16DB609A00961FA8 /* UIColor+DayColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+DayColor.m"; path = "../UIColor+DayColor.m"; sourceTree = "<group>"; };
-		A9CF30F116D6625E008DE42C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D22A41A216CD373C00C85FE4 /* DagensPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DagensPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A41A516CD373C00C85FE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D22A41A716CD373C00C85FE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -79,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9CF30F216D6625E008DE42C /* QuartzCore.framework in Frameworks */,
 				D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */,
 				D22A41A816CD373C00C85FE4 /* Foundation.framework in Frameworks */,
 				D22A41AA16CD373C00C85FE4 /* CoreGraphics.framework in Frameworks */,
@@ -89,32 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A968675C16D6606300DDD904 /* ViewDeck */ = {
-			isa = PBXGroup;
-			children = (
-				A968675916D6605900DDD904 /* IIWrapController.h */,
-				A968675A16D6605900DDD904 /* IIWrapController.m */,
-				A968671C16D5F0A700DDD904 /* IIViewDeckController.h */,
-				A968671D16D5F0A700DDD904 /* IIViewDeckController.m */,
-			);
-			name = ViewDeck;
-			sourceTree = "<group>";
-		};
-		A9CF30F316D66561008DE42C /* DayWeekMonth */ = {
-			isa = PBXGroup;
-			children = (
-				D22A41C016CD373C00C85FE4 /* FirstViewController.h */,
-				D22A41C116CD373C00C85FE4 /* FirstViewController.m */,
-				A9213F8516CD536500502412 /* WeekViewController.h */,
-				A9213F8616CD536500502412 /* WeekViewController.m */,
-				A9213F8816CD53A000502412 /* MonthViewController.h */,
-				A9213F8916CD53A000502412 /* MonthViewController.m */,
-				A9B6563916DB609A00961FA8 /* UIColor+DayColor.h */,
-				A9B6563A16DB609A00961FA8 /* UIColor+DayColor.m */,
-			);
-			name = DayWeekMonth;
-			sourceTree = "<group>";
-		};
 		D22A419916CD373C00C85FE4 = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +97,6 @@
 		D22A41A416CD373C00C85FE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A9CF30F116D6625E008DE42C /* QuartzCore.framework */,
 				D22A41A516CD373C00C85FE4 /* UIKit.framework */,
 				D22A41A716CD373C00C85FE4 /* Foundation.framework */,
 				D22A41A916CD373C00C85FE4 /* CoreGraphics.framework */,
@@ -150,22 +111,17 @@
 				D22A41B416CD373C00C85FE4 /* AppDelegate.h */,
 				D22A41B516CD373C00C85FE4 /* AppDelegate.m */,
 				D22A41BD16CD373C00C85FE4 /* MainStoryboard.storyboard */,
+				D22A41C016CD373C00C85FE4 /* FirstViewController.h */,
+				D22A41C116CD373C00C85FE4 /* FirstViewController.m */,
 				D22A41C316CD373C00C85FE4 /* first.png */,
 				D22A41C516CD373C00C85FE4 /* first@2x.png */,
 				D22A41CA16CD373C00C85FE4 /* second.png */,
 				D22A41CC16CD373C00C85FE4 /* second@2x.png */,
-				A9CF30F316D66561008DE42C /* DayWeekMonth */,
-				A968675C16D6606300DDD904 /* ViewDeck */,
 				D22A41AC16CD373C00C85FE4 /* Supporting Files */,
-<<<<<<< HEAD
 				A9213F8516CD536500502412 /* WeekViewController.h */,
 				A9213F8616CD536500502412 /* WeekViewController.m */,
 				A9213F8816CD53A000502412 /* MonthViewController.h */,
 				A9213F8916CD53A000502412 /* MonthViewController.m */,
-=======
-				A9213F8216CD534D00502412 /* ProfilViewController.h */,
-				A9213F8316CD534D00502412 /* ProfilViewController.m */,
->>>>>>> trassel
 			);
 			path = DagensPixel;
 			sourceTree = "<group>";
@@ -274,14 +230,8 @@
 				D22A41C216CD373C00C85FE4 /* FirstViewController.m in Sources */,
 				A9213F8716CD536500502412 /* WeekViewController.m in Sources */,
 				A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */,
-<<<<<<< HEAD
 				D22A421316D60F5F00C85FE4 /* Server.m in Sources */,
 				D22A426216DB619C00C85FE4 /* ProfileViewController.m in Sources */,
-=======
-				A968675816D6597200DDD904 /* IIViewDeckController.m in Sources */,
-				A968675B16D6605900DDD904 /* IIWrapController.m in Sources */,
-				A9B6563B16DB609A00961FA8 /* UIColor+DayColor.m in Sources */,
->>>>>>> trassel
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
