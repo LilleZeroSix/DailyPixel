@@ -29,8 +29,6 @@
 		D22A41CB16CD373C00C85FE4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41CA16CD373C00C85FE4 /* second.png */; };
 		D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41CC16CD373C00C85FE4 /* second@2x.png */; };
 		D22A421316D60F5F00C85FE4 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A421216D60F5F00C85FE4 /* Server.m */; };
-		D22A424B16D630D200C85FE4 /* 200px-Mk7_supermushroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22A424A16D630D100C85FE4 /* 200px-Mk7_supermushroom.jpg */; };
-		D22A424D16D6375600C85FE4 /* shroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22A424C16D6375600C85FE4 /* shroom.jpg */; };
 		D22A426216DB619C00C85FE4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A426116DB619C00C85FE4 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -68,8 +66,6 @@
 		D22A41CC16CD373C00C85FE4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		D22A421116D60F5F00C85FE4 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
 		D22A421216D60F5F00C85FE4 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
-		D22A424A16D630D100C85FE4 /* 200px-Mk7_supermushroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "200px-Mk7_supermushroom.jpg"; path = "../../../../Pictures/200px-Mk7_supermushroom.jpg"; sourceTree = "<group>"; };
-		D22A424C16D6375600C85FE4 /* shroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shroom.jpg; path = ../../../../Pictures/shroom.jpg; sourceTree = "<group>"; };
 		D22A426016DB619B00C85FE4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		D22A426116DB619C00C85FE4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,8 +174,6 @@
 		D22A421716D612C100C85FE4 /* ProfileControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D22A424A16D630D100C85FE4 /* 200px-Mk7_supermushroom.jpg */,
-				D22A424C16D6375600C85FE4 /* shroom.jpg */,
 				D22A421116D60F5F00C85FE4 /* Server.h */,
 				D22A421216D60F5F00C85FE4 /* Server.m */,
 				D22A426016DB619B00C85FE4 /* ProfileViewController.h */,
@@ -248,8 +242,6 @@
 				D22A41C616CD373C00C85FE4 /* first@2x.png in Resources */,
 				D22A41CB16CD373C00C85FE4 /* second.png in Resources */,
 				D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */,
-				D22A424B16D630D200C85FE4 /* 200px-Mk7_supermushroom.jpg in Resources */,
-				D22A424D16D6375600C85FE4 /* shroom.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
