@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller - Dagens Bild-->
+        <scene sceneID="hPd-Bc-fGq">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="vYx-lC-bth" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dagens Bild" id="AoK-LL-Xgm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vlh-P3-aTK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="oVA-R4-3gk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1K-J6-uR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-208"/>
+        </scene>
         <!--First View Controller - First-->
         <scene sceneID="11">
             <objects>
                 <viewController title="First" id="2" customClass="FirstViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Dagens bild" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
@@ -40,14 +56,18 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dagens bild" image="first" id="7"/>
-                    <connections>
-                        <segue destination="la5-Qc-ifG" kind="custom" id="z1S-nH-EqS"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="Nga-Ek-uvZ">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="vbr-Z3-dfR"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="O9O-UN-TMZ"/>
+                <swipeGestureRecognizer direction="left" id="O9O-UN-TMZ">
+                    <connections>
+                        <segue destination="la5-Qc-ifG" kind="push" id="4Ca-Ir-FCi"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="653" y="-184"/>
+            <point key="canvasLocation" x="1071" y="-208"/>
         </scene>
         <!--Week View Controller-->
         <scene sceneID="kQ4-o0-U5C">
@@ -81,13 +101,11 @@
                             <constraint firstItem="G3x-40-b1d" firstAttribute="top" secondItem="Gsz-7e-UQx" secondAttribute="top" constant="204" id="xRW-s2-8e0"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="bU1-z1-uNZ" kind="custom" id="dVT-2n-0eV"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="6Aw-Gp-hBR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lki-IX-grM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079" y="-184"/>
+            <point key="canvasLocation" x="1479" y="-208"/>
         </scene>
         <!--Month View Controller-->
         <scene sceneID="16g-y8-Udv">
@@ -123,42 +141,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEp-ww-ELg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539" y="-184"/>
+            <point key="canvasLocation" x="1939" y="-208"/>
         </scene>
-        <!--Profil View Controller - Profil-->
-        <scene sceneID="o1m-4D-hus">
+        <!--Profile View Controller - Item-->
+        <scene sceneID="ooE-wT-uYJ">
             <objects>
-                <viewController id="BDR-EI-Z1i" customClass="ProfilViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XIP-CF-EGI">
+                <viewController id="zJQ-lZ-a7d" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vnA-Wi-fPh">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Egen profil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-nP-M6N">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="SbI-ef-gxF"/>
-                                    <constraint firstAttribute="width" constant="129" id="k4N-ma-Idm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxf-0B-uD7"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ndc-nP-M6N" firstAttribute="centerX" secondItem="XIP-CF-EGI" secondAttribute="centerX" type="default" id="LlY-HE-75h"/>
-                            <constraint firstItem="ndc-nP-M6N" firstAttribute="top" secondItem="XIP-CF-EGI" secondAttribute="top" constant="135" id="hN8-lS-FuH"/>
+                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="top" secondItem="vnA-Wi-fPh" secondAttribute="top" type="default" id="6kg-Lr-D8d"/>
+                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="trailing" secondItem="vnA-Wi-fPh" secondAttribute="trailing" type="default" id="Iuj-LK-nQt"/>
+                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="bottom" secondItem="vnA-Wi-fPh" secondAttribute="bottom" type="default" id="Wkl-7Y-uOQ"/>
+                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="leading" secondItem="vnA-Wi-fPh" secondAttribute="leading" type="default" id="hu8-bJ-yXt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profil" id="Ztr-Pj-pgN"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="zIQ-B4-pnM"/>
+                    <connections>
+                        <outlet property="scroller" destination="Fxf-0B-uD7" id="2Oh-ld-8cM"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s3J-Vz-gtK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EnH-Ag-jJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="1213"/>
+            <point key="canvasLocation" x="653" y="1163"/>
         </scene>
-        <!--Second View Controller - Second-->
+        <!--View Controller - Second-->
         <scene sceneID="13">
             <objects>
-                <viewController title="Second" id="3" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController title="Second" id="3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +184,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Loaded by the second view controller — an instance of SecondViewController — specified in the app delegate." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Här visas allas promoteade bilder, som du kan sedan rösta på." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="23">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="cQR-IW-sY8"/>
                                 </constraints>
@@ -204,14 +219,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="vYx-lC-bth" kind="relationship" relationship="viewControllers" id="TrJ-e1-yW0"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
-                        <segue destination="BDR-EI-Z1i" kind="relationship" relationship="viewControllers" id="gkQ-86-mgv"/>
+                        <segue destination="zJQ-lZ-a7d" kind="relationship" relationship="viewControllers" id="tER-fb-BXD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="6" y="498"/>
         </scene>
     </scenes>
     <resources>
@@ -228,11 +243,11 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="ProfilViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfilViewController.h"/>
-        </class>
-        <class className="SecondViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
+            </relationships>
         </class>
         <class className="WeekViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WeekViewController.h"/>

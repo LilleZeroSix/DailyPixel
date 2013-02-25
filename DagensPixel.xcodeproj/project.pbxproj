@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A9213F8416CD534D00502412 /* ProfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8316CD534D00502412 /* ProfilViewController.m */; };
 		A9213F8716CD536500502412 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8616CD536500502412 /* WeekViewController.m */; };
 		A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8916CD53A000502412 /* MonthViewController.m */; };
 		D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A516CD373C00C85FE4 /* UIKit.framework */; };
@@ -23,14 +22,15 @@
 		D22A41C216CD373C00C85FE4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A41C116CD373C00C85FE4 /* FirstViewController.m */; };
 		D22A41C416CD373C00C85FE4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41C316CD373C00C85FE4 /* first.png */; };
 		D22A41C616CD373C00C85FE4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41C516CD373C00C85FE4 /* first@2x.png */; };
-		D22A41C916CD373C00C85FE4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A41C816CD373C00C85FE4 /* SecondViewController.m */; };
 		D22A41CB16CD373C00C85FE4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41CA16CD373C00C85FE4 /* second.png */; };
 		D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41CC16CD373C00C85FE4 /* second@2x.png */; };
+		D22A421316D60F5F00C85FE4 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A421216D60F5F00C85FE4 /* Server.m */; };
+		D22A424B16D630D200C85FE4 /* 200px-Mk7_supermushroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22A424A16D630D100C85FE4 /* 200px-Mk7_supermushroom.jpg */; };
+		D22A424D16D6375600C85FE4 /* shroom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22A424C16D6375600C85FE4 /* shroom.jpg */; };
+		D22A426216DB619C00C85FE4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A426116DB619C00C85FE4 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A9213F8216CD534D00502412 /* ProfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilViewController.h; sourceTree = "<group>"; };
-		A9213F8316CD534D00502412 /* ProfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilViewController.m; sourceTree = "<group>"; };
 		A9213F8516CD536500502412 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		A9213F8616CD536500502412 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		A9213F8816CD53A000502412 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
@@ -53,10 +53,14 @@
 		D22A41C116CD373C00C85FE4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		D22A41C316CD373C00C85FE4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		D22A41C516CD373C00C85FE4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		D22A41C716CD373C00C85FE4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		D22A41C816CD373C00C85FE4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D22A41CA16CD373C00C85FE4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		D22A41CC16CD373C00C85FE4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		D22A421116D60F5F00C85FE4 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		D22A421216D60F5F00C85FE4 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
+		D22A424A16D630D100C85FE4 /* 200px-Mk7_supermushroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "200px-Mk7_supermushroom.jpg"; path = "../../../../Pictures/200px-Mk7_supermushroom.jpg"; sourceTree = "<group>"; };
+		D22A424C16D6375600C85FE4 /* shroom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shroom.jpg; path = ../../../../Pictures/shroom.jpg; sourceTree = "<group>"; };
+		D22A426016DB619B00C85FE4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		D22A426116DB619C00C85FE4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		D22A41AB16CD373C00C85FE4 /* DagensPixel */ = {
 			isa = PBXGroup;
 			children = (
+				D22A421716D612C100C85FE4 /* ProfileControllers */,
 				D22A41B416CD373C00C85FE4 /* AppDelegate.h */,
 				D22A41B516CD373C00C85FE4 /* AppDelegate.m */,
 				D22A41BD16CD373C00C85FE4 /* MainStoryboard.storyboard */,
@@ -110,13 +115,9 @@
 				D22A41C116CD373C00C85FE4 /* FirstViewController.m */,
 				D22A41C316CD373C00C85FE4 /* first.png */,
 				D22A41C516CD373C00C85FE4 /* first@2x.png */,
-				D22A41C716CD373C00C85FE4 /* SecondViewController.h */,
-				D22A41C816CD373C00C85FE4 /* SecondViewController.m */,
 				D22A41CA16CD373C00C85FE4 /* second.png */,
 				D22A41CC16CD373C00C85FE4 /* second@2x.png */,
 				D22A41AC16CD373C00C85FE4 /* Supporting Files */,
-				A9213F8216CD534D00502412 /* ProfilViewController.h */,
-				A9213F8316CD534D00502412 /* ProfilViewController.m */,
 				A9213F8516CD536500502412 /* WeekViewController.h */,
 				A9213F8616CD536500502412 /* WeekViewController.m */,
 				A9213F8816CD53A000502412 /* MonthViewController.h */,
@@ -137,6 +138,19 @@
 				D22A41BB16CD373C00C85FE4 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D22A421716D612C100C85FE4 /* ProfileControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D22A424A16D630D100C85FE4 /* 200px-Mk7_supermushroom.jpg */,
+				D22A424C16D6375600C85FE4 /* shroom.jpg */,
+				D22A421116D60F5F00C85FE4 /* Server.h */,
+				D22A421216D60F5F00C85FE4 /* Server.m */,
+				D22A426016DB619B00C85FE4 /* ProfileViewController.h */,
+				D22A426116DB619C00C85FE4 /* ProfileViewController.m */,
+			);
+			name = ProfileControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +213,8 @@
 				D22A41C616CD373C00C85FE4 /* first@2x.png in Resources */,
 				D22A41CB16CD373C00C85FE4 /* second.png in Resources */,
 				D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */,
+				D22A424B16D630D200C85FE4 /* 200px-Mk7_supermushroom.jpg in Resources */,
+				D22A424D16D6375600C85FE4 /* shroom.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +228,10 @@
 				D22A41B216CD373C00C85FE4 /* main.m in Sources */,
 				D22A41B616CD373C00C85FE4 /* AppDelegate.m in Sources */,
 				D22A41C216CD373C00C85FE4 /* FirstViewController.m in Sources */,
-				D22A41C916CD373C00C85FE4 /* SecondViewController.m in Sources */,
-				A9213F8416CD534D00502412 /* ProfilViewController.m in Sources */,
 				A9213F8716CD536500502412 /* WeekViewController.m in Sources */,
 				A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */,
+				D22A421316D60F5F00C85FE4 /* Server.m in Sources */,
+				D22A426216DB619C00C85FE4 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
