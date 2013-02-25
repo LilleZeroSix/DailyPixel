@@ -147,10 +147,10 @@
 		D22A41AB16CD373C00C85FE4 /* DagensPixel */ = {
 			isa = PBXGroup;
 			children = (
-				D22A421716D612C100C85FE4 /* ProfileControllers */,
 				D22A41B416CD373C00C85FE4 /* AppDelegate.h */,
 				D22A41B516CD373C00C85FE4 /* AppDelegate.m */,
 				D22A41BD16CD373C00C85FE4 /* MainStoryboard.storyboard */,
+				D22A421716D612C100C85FE4 /* ProfileControllers */,
 				A917F06216DB6AE10072A3BA /* DayWeekMonth */,
 				D22A41C316CD373C00C85FE4 /* first.png */,
 				D22A41C516CD373C00C85FE4 /* first@2x.png */,
