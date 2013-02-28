@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
 
 IBOutlet UIScrollView *scroller;
     
 }
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)addPic:(id)sender;
 
 @end

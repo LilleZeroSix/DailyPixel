@@ -23,12 +23,28 @@
     return self;
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+ 
+    [scroller setScrollEnabled:YES];
+    [scroller setContentSize:CGSizeMake(320, 2000)];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [scroller setScrollEnabled:YES];
-    [scroller setContentSize:CGSizeMake(320, 1000)];
+    
+    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(20, 190, 80, 80)];
+    UIView *myView1 = [[UIView alloc] initWithFrame:CGRectMake(120, 190, 80, 80)];
+    UIView *myView2 = [[UIView alloc] initWithFrame:CGRectMake(220, 190, 80, 80)];
+    [myView setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:myView];
+    [myView1 setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:myView1];
+    [myView2 setBackgroundColor:[UIColor blueColor]];
+    [self.view addSubview:myView2];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,4 +53,32 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addPic:(id)sender
+{
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    } else {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    }
+    
+    [imagePicker setDelegate:self];
+    
+    [self presentViewController:imagePicker animated:YES completion:nil];
+    
+}
+
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    NSLog(@"info: %@", info);
+    
+    
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.imageView setImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
+    }];
+}
 @end
