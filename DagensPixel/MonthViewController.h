@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ECSlidingViewController.h"
 
 @interface MonthViewController : UIViewController
+
+@property (nonatomic) CGFloat peekLeftAmount;
 
 @end

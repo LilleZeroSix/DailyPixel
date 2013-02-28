@@ -4,28 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller - Dagens Bild-->
-        <scene sceneID="hPd-Bc-fGq">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b1K-J6-uR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController definesPresentationContext="YES" id="vYx-lC-bth" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dagens Bild" id="AoK-LL-Xgm"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vlh-P3-aTK">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="oVA-R4-3gk"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="653" y="-208"/>
-        </scene>
         <!--Day View Controller - Day-->
         <scene sceneID="11">
             <objects>
                 <viewController title="Day" id="2" customClass="DayViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Dagens bild" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="20">
@@ -40,20 +24,35 @@
                                     <constraint firstAttribute="width" constant="240" id="N1O-Uk-vXf"/>
                                 </constraints>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3p-q4-91x">
+                                <items>
+                                    <navigationItem title="Dagens Bild" id="cIL-Ug-mdb">
+                                        <barButtonItem key="leftBarButtonItem" title="Månadens" id="f1K-WD-0TT">
+                                            <connections>
+                                                <action selector="MonthButton:" destination="2" id="H4n-og-HrH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Veckans" id="KWk-jY-8F7">
+                                            <connections>
+                                                <action selector="WeekButton:" destination="2" id="vn4-Le-LiG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="E3p-q4-91x" firstAttribute="top" secondItem="16" secondAttribute="top" type="default" id="8Z7-a9-MGe"/>
                             <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Qxj-1L-2Yh"/>
+                            <constraint firstItem="E3p-q4-91x" firstAttribute="leading" secondItem="16" secondAttribute="leading" type="default" id="RBJ-Ha-SjQ"/>
                             <constraint firstItem="20" firstAttribute="leading" secondItem="16" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ty9-wx-CyI"/>
+                            <constraint firstItem="E3p-q4-91x" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" type="default" id="bgD-cQ-zXO"/>
                             <constraint firstItem="scy-It-gGx" firstAttribute="top" secondItem="16" secondAttribute="top" constant="200" id="cbg-Vd-lHa"/>
                             <constraint firstItem="20" firstAttribute="top" secondItem="16" secondAttribute="top" constant="123" id="vVz-R0-bIV"/>
                             <constraint firstItem="scy-It-gGx" firstAttribute="centerX" secondItem="20" secondAttribute="centerX" type="default" id="zCv-E1-jmf"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="O9O-UN-TMZ" appends="YES" id="7Hb-yd-uRS"/>
-                            <outletCollection property="gestureRecognizers" destination="kFT-jg-2oS" appends="YES" id="hwr-Qb-rgW"/>
-                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dagens bild" image="first" id="7"/>
                     <navigationItem key="navigationItem" id="Nga-Ek-uvZ">
@@ -61,23 +60,13 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="O9O-UN-TMZ">
-                    <connections>
-                        <segue destination="la5-Qc-ifG" kind="push" id="4Ca-Ir-FCi"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="kFT-jg-2oS">
-                    <connections>
-                        <segue destination="bU1-z1-uNZ" kind="push" id="T2H-kw-D4I"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1071" y="-208"/>
+            <point key="canvasLocation" x="799" y="-384"/>
         </scene>
         <!--Week View Controller-->
         <scene sceneID="kQ4-o0-U5C">
             <objects>
-                <viewController id="la5-Qc-ifG" customClass="WeekViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Week" id="la5-Qc-ifG" customClass="WeekViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gsz-7e-UQx">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -106,25 +95,17 @@
                             <constraint firstItem="vU7-WS-JbP" firstAttribute="centerX" secondItem="Gsz-7e-UQx" secondAttribute="centerX" type="default" id="XFR-5b-VVH"/>
                             <constraint firstItem="G3x-40-b1d" firstAttribute="top" secondItem="Gsz-7e-UQx" secondAttribute="top" constant="204" id="xRW-s2-8e0"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="43E-m0-jrl" appends="YES" id="ARQ-Yh-dQH"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="6Aw-Gp-hBR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lki-IX-grM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="43E-m0-jrl">
-                    <connections>
-                        <segue destination="2" kind="custom" id="TM2-eX-Jyz"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1489" y="-218"/>
+            <point key="canvasLocation" x="1243" y="-384"/>
         </scene>
         <!--Month View Controller-->
         <scene sceneID="16g-y8-Udv">
             <objects>
-                <viewController id="bU1-z1-uNZ" customClass="MonthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Month" id="bU1-z1-uNZ" customClass="MonthViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIG-XI-WAX">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -156,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEp-ww-ELg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="-208"/>
+            <point key="canvasLocation" x="371" y="-384"/>
         </scene>
         <!--Profile View Controller - Item-->
         <scene sceneID="ooE-wT-uYJ">
@@ -249,9 +230,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vYx-lC-bth" kind="relationship" relationship="viewControllers" id="TrJ-e1-yW0"/>
                         <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
                         <segue destination="zJQ-lZ-a7d" kind="relationship" relationship="viewControllers" id="tER-fb-BXD"/>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="WRM-GK-uYD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
@@ -266,6 +247,10 @@
     <classes>
         <class className="DayViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DayViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="MonthButton:"/>
+                <relationship kind="action" name="WeekButton:"/>
+            </relationships>
         </class>
         <class className="MonthViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MonthViewController.h"/>
@@ -288,7 +273,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="oVA-R4-3gk"/>
-    </inferredMetricsTieBreakers>
 </document>

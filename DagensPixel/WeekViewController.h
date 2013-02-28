@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ECSlidingViewController.h"
 
 @interface WeekViewController : UIViewController
+
+@property (nonatomic) CGFloat peekRightAmount;
 
 @end
