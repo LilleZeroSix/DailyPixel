@@ -7,7 +7,6 @@
         <!--Navigation Controller - Dagens Bild-->
         <scene sceneID="hPd-Bc-fGq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b1K-J6-uR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="vYx-lC-bth" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Dagens Bild" id="AoK-LL-Xgm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vlh-P3-aTK">
@@ -17,6 +16,7 @@
                         <segue destination="2" kind="relationship" relationship="rootViewController" id="oVA-R4-3gk"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1K-J6-uR3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="-208"/>
         </scene>
@@ -298,28 +298,6 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="DayViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DayViewController.h"/>
-        </class>
-        <class className="MonthViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MonthViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ProfileViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addPic:"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="WeekViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WeekViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

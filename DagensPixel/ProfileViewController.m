@@ -36,15 +36,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    UIView *myView = [[UIView alloc] initWithFrame:CGRectMake(20, 190, 80, 80)];
-    UIView *myView1 = [[UIView alloc] initWithFrame:CGRectMake(120, 190, 80, 80)];
-    UIView *myView2 = [[UIView alloc] initWithFrame:CGRectMake(220, 190, 80, 80)];
+    UIImageView *myView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 190, 80, 80)];
+    UIImageView *myView1 = [[UIImageView alloc] initWithFrame:CGRectMake(120, 190, 80, 80)];
+    UIImageView *myView2 = [[UIImageView alloc] initWithFrame:CGRectMake(220, 190, 80, 80)];
     [myView setBackgroundColor:[UIColor blueColor]];
-    [self.view addSubview:myView];
+    [scroller addSubview:myView];
     [myView1 setBackgroundColor:[UIColor blueColor]];
-    [self.view addSubview:myView1];
+    [scroller addSubview:myView1];
     [myView2 setBackgroundColor:[UIColor blueColor]];
-    [self.view addSubview:myView2];
+    [scroller addSubview:myView2];
 }
 
 - (void)didReceiveMemoryWarning

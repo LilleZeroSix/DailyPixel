@@ -16,6 +16,7 @@ IBOutlet UIScrollView *scroller;
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollerView;
 
 - (IBAction)addPic:(id)sender;
 
