@@ -12,7 +12,7 @@
 #import "WeekViewController.h"
 #import "MonthViewController.h"
 
-@interface DayViewController : ECSlidingViewController
+@interface DayViewController : UIViewController
 - (IBAction)MonthButton:(id)sender;
 - (IBAction)WeekButton:(id)sender;
 
