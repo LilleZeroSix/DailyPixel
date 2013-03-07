@@ -300,8 +300,6 @@
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
-    </resources>
-    <classes>
         <image name="first" width="16" height="16"/>
     </resources>
     <classes>
@@ -344,9 +342,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="WeekViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WeekViewController.h"/>
