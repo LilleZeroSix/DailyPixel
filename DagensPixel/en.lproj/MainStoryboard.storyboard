@@ -162,20 +162,21 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.98456131811840275" green="0.97587027995888087" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YQ0-vo-cv1">
-                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="itemSize" width="80" height="80"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="JlE-XV-3OZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </view>
+                                                <size key="customSize" width="80" height="80"/>
                                             </collectionViewCell>
                                         </cells>
                                         <connections>
@@ -191,7 +192,6 @@
                     <tabBarItem key="tabBarItem" title="Item" id="zIQ-B4-pnM"/>
                     <connections>
                         <outlet property="collection" destination="6ni-z1-7MB" id="uOp-Mf-Lj9"/>
-                        <outlet property="imageView" destination="BUx-m5-Osg" id="Sls-Kj-iMa"/>
                         <outlet property="scroller" destination="Fxf-0B-uD7" id="2Oh-ld-8cM"/>
                     </connections>
                 </viewController>
@@ -266,9 +266,7 @@
             <relationships>
                 <relationship kind="action" name="addPic:"/>
                 <relationship kind="outlet" name="collection" candidateClass="UICollectionView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="scrollerView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
         <class className="UICollectionReusableView" superclassName="UIView">

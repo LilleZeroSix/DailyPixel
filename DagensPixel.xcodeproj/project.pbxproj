@@ -31,7 +31,6 @@
 		D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41CC16CD373C00C85FE4 /* second@2x.png */; };
 		D22A421316D60F5F00C85FE4 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A421216D60F5F00C85FE4 /* Server.m */; };
 		D22A426216DB619C00C85FE4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A426116DB619C00C85FE4 /* ProfileViewController.m */; };
-		D2DC9C9116E4AD2000C1C68E /* ProfileCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DC9C9016E4AD2000C1C68E /* ProfileCollectionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,8 +71,6 @@
 		D22A421216D60F5F00C85FE4 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 		D22A426016DB619B00C85FE4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		D22A426116DB619C00C85FE4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		D2DC9C8F16E4AD2000C1C68E /* ProfileCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCollectionController.h; sourceTree = "<group>"; };
-		D2DC9C9016E4AD2000C1C68E /* ProfileCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCollectionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +183,6 @@
 				D22A421216D60F5F00C85FE4 /* Server.m */,
 				D22A426016DB619B00C85FE4 /* ProfileViewController.h */,
 				D22A426116DB619C00C85FE4 /* ProfileViewController.m */,
-				D2DC9C8F16E4AD2000C1C68E /* ProfileCollectionController.h */,
-				D2DC9C9016E4AD2000C1C68E /* ProfileCollectionController.m */,
 			);
 			name = ProfileControllers;
 			sourceTree = "<group>";
@@ -273,7 +268,6 @@
 				A917F06B16DB6B580072A3BA /* IIViewDeckController.m in Sources */,
 				A917F06C16DB6B580072A3BA /* IIWrapController.m in Sources */,
 				A917F07116DB73230072A3BA /* UIColor+PixelBackground.m in Sources */,
-				D2DC9C9116E4AD2000C1C68E /* ProfileCollectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

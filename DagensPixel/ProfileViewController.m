@@ -37,7 +37,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    _item = 32;
+    _item = 0;
     
     float numberOfItems = ceil(_item/3.0);
     
@@ -56,7 +56,13 @@
     float green = ( arc4random()%255 + 1)/255.0;
     float blue = ( arc4random()%255 + 1)/255.0;
     
-    cell.backgroundColor = [UIColor  colorWithRed:red green:green blue:blue alpha:1.0];
+    //cell.backgroundColor = [UIColor  colorWithRed:red green:green blue:blue alpha:1.0];
+    
+    self.imageView = [[UIImageView alloc] init];
+    [self.imageView setFrame:CGRectMake(0, 0, 100, 100)];
+    
+    [cell.contentView addSubview:self.imageView];
+    
     
     return cell;
 }
@@ -94,7 +100,31 @@
 
 - (IBAction)addPic:(id)sender
 {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    } else {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    }
+    
+    [imagePicker setDelegate:self];
+    
+    [self presentViewController:imagePicker animated:YES completion:nil];
+    
+}
 
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    NSLog(@"info: %@", info);
+    
+    
+    
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.imageView setImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
+    }];
 }
 
 
