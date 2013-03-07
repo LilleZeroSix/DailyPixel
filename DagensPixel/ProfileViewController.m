@@ -28,7 +28,8 @@
     [super viewDidAppear:animated];
  
     [scroller setScrollEnabled:YES];
-    [scroller setContentSize:CGSizeMake(320, 2000)];
+    [scroller setContentSize:CGSizeMake(320, _scrollerSize)];
+    [_collection setFrame:CGRectMake(20, 200, 280, _collectionSize)];
 }
 
 - (void)viewDidLoad
@@ -36,16 +37,54 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    UIImageView *myView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 190, 80, 80)];
-    UIImageView *myView1 = [[UIImageView alloc] initWithFrame:CGRectMake(120, 190, 80, 80)];
-    UIImageView *myView2 = [[UIImageView alloc] initWithFrame:CGRectMake(220, 190, 80, 80)];
-    [myView setBackgroundColor:[UIColor blueColor]];
-    [scroller addSubview:myView];
-    [myView1 setBackgroundColor:[UIColor blueColor]];
-    [scroller addSubview:myView1];
-    [myView2 setBackgroundColor:[UIColor blueColor]];
-    [scroller addSubview:myView2];
+    _item = 32;
+    
+    float numberOfItems = ceil(_item/3.0);
+    
+    NSLog(@"numberOfItems: %f", numberOfItems);
+    
+    _collectionSize = numberOfItems*90;
+    _scrollerSize = _collectionSize+206;
+    
 }
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionCell" forIndexPath:indexPath];
+    
+    float red = ( arc4random()%255 + 1)/255.0;
+    float green = ( arc4random()%255 + 1)/255.0;
+    float blue = ( arc4random()%255 + 1)/255.0;
+    
+    cell.backgroundColor = [UIColor  colorWithRed:red green:green blue:blue alpha:1.0];
+    
+    return cell;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return _item;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(80, 80);
+    //size = 90
+    //item = 30
+    //(30/3)90=collectionSize
+    //collectionSize+206;
+    
+}
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -55,30 +94,8 @@
 
 - (IBAction)addPic:(id)sender
 {
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    
-    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
-    {
-        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
-    } else {
-        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-    }
-    
-    [imagePicker setDelegate:self];
-    
-    [self presentViewController:imagePicker animated:YES completion:nil];
-    
+
 }
 
 
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    NSLog(@"info: %@", info);
-    
-    
-    
-    [self dismissViewControllerAnimated:YES completion:^{
-        [self.imageView setImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
-    }];
-}
 @end
