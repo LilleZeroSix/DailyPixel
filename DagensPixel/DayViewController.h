@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "IIViewDeckController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "ECSlidingViewController.h"
+#import "WeekViewController.h"
+#import "MonthViewController.h"
 
-@interface DayViewController : UIViewController
-
-@property (nonatomic, strong) UIViewController *centerController;
+@interface DayViewController : UIViewController 
+- (IBAction)MonthButton:(id)sender;
+- (IBAction)WeekButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *DagensBildPic;
 
 @end

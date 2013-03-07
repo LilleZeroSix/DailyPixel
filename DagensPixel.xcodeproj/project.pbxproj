@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A917F06A16DB6B580072A3BA /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F06516DB6B580072A3BA /* IISideController.m */; };
-		A917F06B16DB6B580072A3BA /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F06716DB6B580072A3BA /* IIViewDeckController.m */; };
-		A917F06C16DB6B580072A3BA /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F06916DB6B580072A3BA /* IIWrapController.m */; };
 		A917F06E16DB6C9A0072A3BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A917F06D16DB6C9A0072A3BA /* QuartzCore.framework */; };
 		A917F07116DB73230072A3BA /* UIColor+PixelBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F07016DB73230072A3BA /* UIColor+PixelBackground.m */; };
+		A917F07816DB8E6E0072A3BA /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F07516DB8E6E0072A3BA /* ECSlidingViewController.m */; };
+		A917F07916DB8E6E0072A3BA /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F07716DB8E6E0072A3BA /* UIImage+ImageWithUIView.m */; };
 		A9213F8716CD536500502412 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8616CD536500502412 /* WeekViewController.m */; };
 		A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8916CD53A000502412 /* MonthViewController.m */; };
+		A9BC6FF216E48196002A7A12 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BC6FF116E48196002A7A12 /* InitialSlidingViewController.m */; };
+		A9BC6FF916E4B076002A7A12 /* TestPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9BC6FF816E4B076002A7A12 /* TestPic.jpg */; };
 		D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A516CD373C00C85FE4 /* UIKit.framework */; };
 		D22A41A816CD373C00C85FE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A716CD373C00C85FE4 /* Foundation.framework */; };
 		D22A41AA16CD373C00C85FE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A916CD373C00C85FE4 /* CoreGraphics.framework */; };
@@ -34,19 +35,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A917F06416DB6B580072A3BA /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
-		A917F06516DB6B580072A3BA /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
-		A917F06616DB6B580072A3BA /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
-		A917F06716DB6B580072A3BA /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
-		A917F06816DB6B580072A3BA /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
-		A917F06916DB6B580072A3BA /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
 		A917F06D16DB6C9A0072A3BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A917F06F16DB73230072A3BA /* UIColor+PixelBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PixelBackground.h"; sourceTree = "<group>"; };
 		A917F07016DB73230072A3BA /* UIColor+PixelBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PixelBackground.m"; sourceTree = "<group>"; };
+		A917F07416DB8E6E0072A3BA /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		A917F07516DB8E6E0072A3BA /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		A917F07616DB8E6E0072A3BA /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		A917F07716DB8E6E0072A3BA /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
 		A9213F8516CD536500502412 /* WeekViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekViewController.h; sourceTree = "<group>"; };
 		A9213F8616CD536500502412 /* WeekViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekViewController.m; sourceTree = "<group>"; };
 		A9213F8816CD53A000502412 /* MonthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthViewController.h; sourceTree = "<group>"; };
 		A9213F8916CD53A000502412 /* MonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthViewController.m; sourceTree = "<group>"; };
+		A9BC6FF016E48196002A7A12 /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingViewController.h; sourceTree = "<group>"; };
+		A9BC6FF116E48196002A7A12 /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingViewController.m; sourceTree = "<group>"; };
+		A9BC6FF816E4B076002A7A12 /* TestPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TestPic.jpg; path = ../TestPic.jpg; sourceTree = "<group>"; };
 		D22A41A216CD373C00C85FE4 /* DagensPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DagensPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A41A516CD373C00C85FE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D22A41A716CD373C00C85FE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +93,7 @@
 		A917F06216DB6AE10072A3BA /* DayWeekMonth */ = {
 			isa = PBXGroup;
 			children = (
+				A9BC6FF816E4B076002A7A12 /* TestPic.jpg */,
 				D22A41C016CD373C00C85FE4 /* DayViewController.h */,
 				D22A41C116CD373C00C85FE4 /* DayViewController.m */,
 				A9213F8516CD536500502412 /* WeekViewController.h */,
@@ -99,28 +102,37 @@
 				A9213F8916CD53A000502412 /* MonthViewController.m */,
 				A917F06F16DB73230072A3BA /* UIColor+PixelBackground.h */,
 				A917F07016DB73230072A3BA /* UIColor+PixelBackground.m */,
-				A917F06316DB6B580072A3BA /* ViewDeck */,
+				A9BC6FF016E48196002A7A12 /* InitialSlidingViewController.h */,
+				A9BC6FF116E48196002A7A12 /* InitialSlidingViewController.m */,
 			);
 			name = DayWeekMonth;
 			sourceTree = "<group>";
 		};
-		A917F06316DB6B580072A3BA /* ViewDeck */ = {
+		A917F07216DB8E6E0072A3BA /* Slider */ = {
 			isa = PBXGroup;
 			children = (
-				A917F06416DB6B580072A3BA /* IISideController.h */,
-				A917F06516DB6B580072A3BA /* IISideController.m */,
-				A917F06616DB6B580072A3BA /* IIViewDeckController.h */,
-				A917F06716DB6B580072A3BA /* IIViewDeckController.m */,
-				A917F06816DB6B580072A3BA /* IIWrapController.h */,
-				A917F06916DB6B580072A3BA /* IIWrapController.m */,
+				A917F07316DB8E6E0072A3BA /* ECSlidingViewController */,
 			);
-			path = ViewDeck;
+			name = Slider;
+			path = DagensPixel/Vendor;
+			sourceTree = "<group>";
+		};
+		A917F07316DB8E6E0072A3BA /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A917F07416DB8E6E0072A3BA /* ECSlidingViewController.h */,
+				A917F07516DB8E6E0072A3BA /* ECSlidingViewController.m */,
+				A917F07616DB8E6E0072A3BA /* UIImage+ImageWithUIView.h */,
+				A917F07716DB8E6E0072A3BA /* UIImage+ImageWithUIView.m */,
+			);
+			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
 		D22A419916CD373C00C85FE4 = {
 			isa = PBXGroup;
 			children = (
 				D22A41AB16CD373C00C85FE4 /* DagensPixel */,
+				A917F07216DB8E6E0072A3BA /* Slider */,
 				D22A41A416CD373C00C85FE4 /* Frameworks */,
 				D22A41A316CD373C00C85FE4 /* Products */,
 			);
@@ -247,6 +259,7 @@
 				D22A41C616CD373C00C85FE4 /* first@2x.png in Resources */,
 				D22A41CB16CD373C00C85FE4 /* second.png in Resources */,
 				D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */,
+				A9BC6FF916E4B076002A7A12 /* TestPic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +277,10 @@
 				A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */,
 				D22A421316D60F5F00C85FE4 /* Server.m in Sources */,
 				D22A426216DB619C00C85FE4 /* ProfileViewController.m in Sources */,
-				A917F06A16DB6B580072A3BA /* IISideController.m in Sources */,
-				A917F06B16DB6B580072A3BA /* IIViewDeckController.m in Sources */,
-				A917F06C16DB6B580072A3BA /* IIWrapController.m in Sources */,
 				A917F07116DB73230072A3BA /* UIColor+PixelBackground.m in Sources */,
+				A917F07816DB8E6E0072A3BA /* ECSlidingViewController.m in Sources */,
+				A917F07916DB8E6E0072A3BA /* UIImage+ImageWithUIView.m in Sources */,
+				A9BC6FF216E48196002A7A12 /* InitialSlidingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
