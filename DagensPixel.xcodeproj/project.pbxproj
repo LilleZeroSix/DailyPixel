@@ -14,6 +14,7 @@
 		A9213F8716CD536500502412 /* WeekViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8616CD536500502412 /* WeekViewController.m */; };
 		A9213F8A16CD53A000502412 /* MonthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9213F8916CD53A000502412 /* MonthViewController.m */; };
 		A9BC6FF216E48196002A7A12 /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BC6FF116E48196002A7A12 /* InitialSlidingViewController.m */; };
+		A9BC6FF916E4B076002A7A12 /* TestPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9BC6FF816E4B076002A7A12 /* TestPic.jpg */; };
 		D22A41A616CD373C00C85FE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A516CD373C00C85FE4 /* UIKit.framework */; };
 		D22A41A816CD373C00C85FE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A716CD373C00C85FE4 /* Foundation.framework */; };
 		D22A41AA16CD373C00C85FE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22A41A916CD373C00C85FE4 /* CoreGraphics.framework */; };
@@ -47,6 +48,7 @@
 		A9213F8916CD53A000502412 /* MonthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthViewController.m; sourceTree = "<group>"; };
 		A9BC6FF016E48196002A7A12 /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingViewController.h; sourceTree = "<group>"; };
 		A9BC6FF116E48196002A7A12 /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingViewController.m; sourceTree = "<group>"; };
+		A9BC6FF816E4B076002A7A12 /* TestPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TestPic.jpg; path = ../TestPic.jpg; sourceTree = "<group>"; };
 		D22A41A216CD373C00C85FE4 /* DagensPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DagensPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22A41A516CD373C00C85FE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D22A41A716CD373C00C85FE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +93,7 @@
 		A917F06216DB6AE10072A3BA /* DayWeekMonth */ = {
 			isa = PBXGroup;
 			children = (
+				A9BC6FF816E4B076002A7A12 /* TestPic.jpg */,
 				D22A41C016CD373C00C85FE4 /* DayViewController.h */,
 				D22A41C116CD373C00C85FE4 /* DayViewController.m */,
 				A9213F8516CD536500502412 /* WeekViewController.h */,
@@ -256,6 +259,7 @@
 				D22A41C616CD373C00C85FE4 /* first@2x.png in Resources */,
 				D22A41CB16CD373C00C85FE4 /* second.png in Resources */,
 				D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */,
+				A9BC6FF916E4B076002A7A12 /* TestPic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

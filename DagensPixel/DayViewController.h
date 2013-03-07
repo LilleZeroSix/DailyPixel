@@ -12,8 +12,9 @@
 #import "WeekViewController.h"
 #import "MonthViewController.h"
 
-@interface DayViewController : UIViewController
+@interface DayViewController : UIViewController 
 - (IBAction)MonthButton:(id)sender;
 - (IBAction)WeekButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *DagensBildPic;
 
 @end

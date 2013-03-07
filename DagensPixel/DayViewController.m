@@ -34,14 +34,13 @@
     [self.view addGestureRecognizer:self.slidingViewController.panGesture];
 }
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     //[self.view setBackgroundColor:[UIColor PixelColor]];
     
+    [self.DagensBildPic setImage: [UIImage imageNamed:@"TestPic.jpg"]];
 }
 
 - (void)didReceiveMemoryWarning
