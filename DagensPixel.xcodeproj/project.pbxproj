@@ -34,6 +34,7 @@
 		D22A41CD16CD373C00C85FE4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22A41CC16CD373C00C85FE4 /* second@2x.png */; };
 		D22A421316D60F5F00C85FE4 /* Server.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A421216D60F5F00C85FE4 /* Server.m */; };
 		D22A426216DB619C00C85FE4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A426116DB619C00C85FE4 /* ProfileViewController.m */; };
+		D2F2EF1716F1F5D900D42732 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F2EF1616F1F5D900D42732 /* PictureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		D22A421216D60F5F00C85FE4 /* Server.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Server.m; sourceTree = "<group>"; };
 		D22A426016DB619B00C85FE4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		D22A426116DB619C00C85FE4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		D2F2EF1516F1F5D900D42732 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		D2F2EF1616F1F5D900D42732 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,7 @@
 				D22A41B416CD373C00C85FE4 /* AppDelegate.h */,
 				D22A41B516CD373C00C85FE4 /* AppDelegate.m */,
 				D22A41BD16CD373C00C85FE4 /* MainStoryboard.storyboard */,
+				D2F2EF1416F1F5A000D42732 /* PictureView */,
 				D22A421716D612C100C85FE4 /* ProfileControllers */,
 				A917F06216DB6AE10072A3BA /* DayWeekMonth */,
 				D22A41C316CD373C00C85FE4 /* first.png */,
@@ -203,6 +207,15 @@
 				D22A426116DB619C00C85FE4 /* ProfileViewController.m */,
 			);
 			name = ProfileControllers;
+			sourceTree = "<group>";
+		};
+		D2F2EF1416F1F5A000D42732 /* PictureView */ = {
+			isa = PBXGroup;
+			children = (
+				D2F2EF1516F1F5D900D42732 /* PictureViewController.h */,
+				D2F2EF1616F1F5D900D42732 /* PictureViewController.m */,
+			);
+			name = PictureView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +302,7 @@
 				A917F07816DB8E6E0072A3BA /* ECSlidingViewController.m in Sources */,
 				A917F07916DB8E6E0072A3BA /* UIImage+ImageWithUIView.m in Sources */,
 				A9BC6FF216E48196002A7A12 /* InitialSlidingViewController.m in Sources */,
+				D2F2EF1716F1F5D900D42732 /* PictureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
