@@ -290,12 +290,9 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-<<<<<<< HEAD
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Fxf-0B-uD7">
                                 <rect key="frame" x="0.0" y="24" width="320" height="411"/>
-=======
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxf-0B-uD7">
->>>>>>> gjort något i storyboard
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="BUx-m5-Osg">
                                         <constraints>
