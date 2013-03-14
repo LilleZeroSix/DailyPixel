@@ -33,6 +33,8 @@
     
     [self.view setBackgroundColor:[UIColor PixelColor]];
 	// Do any additional setup after loading the view.
+    
+    [self.monthPic setImage: [UIImage imageNamed:@"fire.jpg"]];
 }
 
 - (void)didReceiveMemoryWarning

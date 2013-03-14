@@ -11,6 +11,7 @@
 
 @interface WeekViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *weekPic;
 @property (nonatomic) CGFloat peekRightAmount;
 
 @end

@@ -34,6 +34,8 @@
     [self.view setBackgroundColor:[UIColor PixelColor]];
 	// Do any additional setup after loading the view.
     
+    [self.weekPic setImage: [UIImage imageNamed:@"nalle.jpg"]];
+    
      }
 
 - (void)didReceiveMemoryWarning

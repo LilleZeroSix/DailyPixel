@@ -11,6 +11,7 @@
 
 @interface MonthViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *monthPic;
 @property (nonatomic) CGFloat peekLeftAmount;
 
 @end
