@@ -22,7 +22,7 @@
     self.view.layer.shadowRadius = 10.0f;
     self.view.layer.shadowColor = [UIColor blackColor].CGColor;
     
-    NSLog(@"slidingView: %@", self.slidingViewController);
+    //NSLog(@"slidingView: %@", self.slidingViewController);
     
     if (![self.slidingViewController.underLeftViewController isKindOfClass:[MonthViewController class]]){
         self.slidingViewController.underLeftViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Month"];
