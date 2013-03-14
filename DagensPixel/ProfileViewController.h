@@ -8,15 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface ProfileViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
 
-IBOutlet UIScrollView *scroller;
+    IBOutlet UIScrollView *scroller;
     
 }
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic) int item;
+@property (nonatomic) int collectionSize;
+@property (nonatomic) int scrollerSize;
+@property (strong, nonatomic) UIImageView * imageView;
 
+
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collection;
 - (IBAction)addPic:(id)sender;
 
 @end

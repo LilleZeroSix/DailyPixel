@@ -178,28 +178,17 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxf-0B-uD7">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Fxf-0B-uD7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="BUx-m5-Osg">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="w0h-Xa-oku"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default.png" id="BUx-m5-Osg">
+                                        <rect key="frame" x="20" y="20" width="280" height="100"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="SUe-W6-mnl">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="Oo1-du-clq"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default.png" id="SUe-W6-mnl">
+                                        <rect key="frame" x="20" y="135" width="280" height="40"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="TIV-5H-eMG">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="LNb-UE-k9a"/>
-                                            <constraint firstAttribute="height" constant="80" id="Svw-uX-3Nr"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTd-XA-eYo">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="GlG-SV-rJt"/>
-                                        </constraints>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sTd-XA-eYo">
+                                        <rect key="frame" x="26" y="140" width="54" height="31"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Add">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -212,33 +201,41 @@
                                             <action selector="addPic:" destination="zJQ-lZ-a7d" eventType="touchUpInside" id="l8L-WJ-IVJ"/>
                                         </connections>
                                     </button>
+                                    <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="6ni-z1-7MB">
+                                        <rect key="frame" x="20" y="201" width="280" height="210"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.98456131811840275" green="0.97587027995888087" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YQ0-vo-cv1">
+                                            <size key="itemSize" width="80" height="80"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="JlE-XV-3OZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <size key="customSize" width="80" height="80"/>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="zJQ-lZ-a7d" id="PLY-Vt-dQg"/>
+                                            <outlet property="delegate" destination="zJQ-lZ-a7d" id="LvV-U7-GWO"/>
+                                        </connections>
+                                    </collectionView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="sTd-XA-eYo" firstAttribute="leading" secondItem="Fxf-0B-uD7" secondAttribute="leading" constant="26" id="1uR-0K-5Ae"/>
-                                    <constraint firstItem="SUe-W6-mnl" firstAttribute="leading" secondItem="Fxf-0B-uD7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4aF-q5-fsE"/>
-                                    <constraint firstAttribute="trailing" secondItem="SUe-W6-mnl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="8Nt-tn-KIS"/>
-                                    <constraint firstAttribute="bottom" secondItem="TIV-5H-eMG" secondAttribute="bottom" constant="51" id="BEK-DB-Kld"/>
-                                    <constraint firstItem="BUx-m5-Osg" firstAttribute="top" secondItem="Fxf-0B-uD7" secondAttribute="top" constant="20" symbolic="YES" type="default" id="DtR-Wn-5YY"/>
-                                    <constraint firstItem="SUe-W6-mnl" firstAttribute="centerX" secondItem="Fxf-0B-uD7" secondAttribute="centerX" type="default" id="GJo-LP-yEq"/>
-                                    <constraint firstItem="TIV-5H-eMG" firstAttribute="top" secondItem="Fxf-0B-uD7" secondAttribute="top" constant="280" id="MyN-6r-dBi"/>
-                                    <constraint firstItem="TIV-5H-eMG" firstAttribute="leading" secondItem="Fxf-0B-uD7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="N8e-pp-OFE"/>
-                                    <constraint firstItem="BUx-m5-Osg" firstAttribute="leading" secondItem="Fxf-0B-uD7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PR0-rH-aGY"/>
-                                    <constraint firstItem="sTd-XA-eYo" firstAttribute="centerY" secondItem="SUe-W6-mnl" secondAttribute="centerY" type="default" id="Ud2-KS-KbV"/>
-                                    <constraint firstItem="SUe-W6-mnl" firstAttribute="top" secondItem="Fxf-0B-uD7" secondAttribute="top" constant="135" id="cYL-lx-EJY"/>
-                                    <constraint firstAttribute="trailing" secondItem="BUx-m5-Osg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ycY-Nf-mbG"/>
-                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="top" secondItem="vnA-Wi-fPh" secondAttribute="top" type="default" id="6kg-Lr-D8d"/>
-                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="trailing" secondItem="vnA-Wi-fPh" secondAttribute="trailing" type="default" id="Iuj-LK-nQt"/>
-                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="bottom" secondItem="vnA-Wi-fPh" secondAttribute="bottom" type="default" id="Wkl-7Y-uOQ"/>
-                            <constraint firstItem="Fxf-0B-uD7" firstAttribute="leading" secondItem="vnA-Wi-fPh" secondAttribute="leading" type="default" id="hu8-bJ-yXt"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="zIQ-B4-pnM"/>
                     <connections>
+                        <outlet property="collection" destination="6ni-z1-7MB" id="uOp-Mf-Lj9"/>
                         <outlet property="scroller" destination="Fxf-0B-uD7" id="2Oh-ld-8cM"/>
                     </connections>
                 </viewController>
@@ -330,7 +327,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
             <relationships>
                 <relationship kind="action" name="addPic:"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="collection" candidateClass="UICollectionView"/>
                 <relationship kind="outlet" name="scroller" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -345,9 +342,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="WeekViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WeekViewController.h"/>
