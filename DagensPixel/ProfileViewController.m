@@ -37,7 +37,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    _item = 0;
+    _item = 30;
     
     float numberOfItems = ceil(_item/3.0);
     
@@ -56,7 +56,7 @@
     float green = ( arc4random()%255 + 1)/255.0;
     float blue = ( arc4random()%255 + 1)/255.0;
     
-    //cell.backgroundColor = [UIColor  colorWithRed:red green:green blue:blue alpha:1.0];
+    cell.backgroundColor = [UIColor  colorWithRed:red green:green blue:blue alpha:1.0];
     
     self.imageView = [[UIImageView alloc] init];
     [self.imageView setFrame:CGRectMake(0, 0, 100, 100)];
