@@ -37,7 +37,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    _item = 30;
+    _item = 10;
     
     float numberOfItems = ceil(_item/3.0);
     
@@ -109,6 +109,7 @@
         [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     }
     
+    
     [imagePicker setDelegate:self];
     
     [self presentViewController:imagePicker animated:YES completion:nil];
@@ -124,6 +125,7 @@
     
     [self dismissViewControllerAnimated:YES completion:^{
         [self.imageView setImage:[info objectForKey:UIImagePickerControllerOriginalImage]];
+        
     }];
 }
 

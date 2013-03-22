@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PictureViewController : UIViewController
-{
-    
-    IBOutlet UIScrollView *scroller;
-    
-}
+@interface PictureViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+@property (strong, nonatomic) UIImageView * imageView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collection;
 
 @end
