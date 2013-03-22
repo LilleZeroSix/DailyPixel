@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+#import "CoreData/CoreData.h"
+@interface ProfileViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UINavigationControllerDelegate, UIImagePickerControllerDelegate, NSFetchedResultsControllerDelegate>
 {
 
     IBOutlet UIScrollView *scroller;
@@ -19,6 +20,8 @@
 @property (nonatomic) int collectionSize;
 @property (nonatomic) int scrollerSize;
 @property (strong, nonatomic) UIImageView * imageView;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 
 
