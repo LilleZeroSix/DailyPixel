@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A9077C1F16FC330200D9FE19 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9077C1E16FC330200D9FE19 /* CoreData.framework */; };
-		A9077C2216FC340400D9FE19 /* Bilder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9077C2016FC340400D9FE19 /* Bilder.xcdatamodeld */; };
 		A9077C5716FC40F200D9FE19 /* PictureViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9077C5616FC40F200D9FE19 /* PictureViewCell.m */; };
+		A9077C5A16FC51E100D9FE19 /* Dagenspixel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A9077C5816FC51E100D9FE19 /* Dagenspixel.xcdatamodeld */; };
 		A917F06E16DB6C9A0072A3BA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A917F06D16DB6C9A0072A3BA /* QuartzCore.framework */; };
 		A917F07116DB73230072A3BA /* UIColor+PixelBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F07016DB73230072A3BA /* UIColor+PixelBackground.m */; };
 		A917F07816DB8E6E0072A3BA /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A917F07516DB8E6E0072A3BA /* ECSlidingViewController.m */; };
@@ -42,9 +42,9 @@
 
 /* Begin PBXFileReference section */
 		A9077C1E16FC330200D9FE19 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		A9077C2116FC340400D9FE19 /* Bilder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bilder.xcdatamodel; sourceTree = "<group>"; };
 		A9077C5516FC40F200D9FE19 /* PictureViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewCell.h; sourceTree = "<group>"; };
 		A9077C5616FC40F200D9FE19 /* PictureViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewCell.m; sourceTree = "<group>"; };
+		A9077C5916FC51E100D9FE19 /* Dagenspixel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dagenspixel.xcdatamodel; sourceTree = "<group>"; };
 		A917F06D16DB6C9A0072A3BA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A917F06F16DB73230072A3BA /* UIColor+PixelBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PixelBackground.h"; sourceTree = "<group>"; };
 		A917F07016DB73230072A3BA /* UIColor+PixelBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PixelBackground.m"; sourceTree = "<group>"; };
@@ -223,9 +223,9 @@
 			children = (
 				D2F2EF1516F1F5D900D42732 /* PictureViewController.h */,
 				D2F2EF1616F1F5D900D42732 /* PictureViewController.m */,
-				A9077C2016FC340400D9FE19 /* Bilder.xcdatamodeld */,
 				A9077C5516FC40F200D9FE19 /* PictureViewCell.h */,
 				A9077C5616FC40F200D9FE19 /* PictureViewCell.m */,
+				A9077C5816FC51E100D9FE19 /* Dagenspixel.xcdatamodeld */,
 			);
 			name = PictureView;
 			sourceTree = "<group>";
@@ -315,8 +315,8 @@
 				A917F07916DB8E6E0072A3BA /* UIImage+ImageWithUIView.m in Sources */,
 				A9BC6FF216E48196002A7A12 /* InitialSlidingViewController.m in Sources */,
 				D2F2EF1716F1F5D900D42732 /* PictureViewController.m in Sources */,
-				A9077C2216FC340400D9FE19 /* Bilder.xcdatamodeld in Sources */,
 				A9077C5716FC40F200D9FE19 /* PictureViewCell.m in Sources */,
+				A9077C5A16FC51E100D9FE19 /* Dagenspixel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,13 +444,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A9077C2016FC340400D9FE19 /* Bilder.xcdatamodeld */ = {
+		A9077C5816FC51E100D9FE19 /* Dagenspixel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A9077C2116FC340400D9FE19 /* Bilder.xcdatamodel */,
+				A9077C5916FC51E100D9FE19 /* Dagenspixel.xcdatamodel */,
 			);
-			currentVersion = A9077C2116FC340400D9FE19 /* Bilder.xcdatamodel */;
-			path = Bilder.xcdatamodeld;
+			currentVersion = A9077C5916FC51E100D9FE19 /* Dagenspixel.xcdatamodel */;
+			path = Dagenspixel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
